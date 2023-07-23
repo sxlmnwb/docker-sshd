@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  docker-sshd:
+    build: .
+    image: docker-sshd
+    container_name: docker-sshd
+    ports:
+      - "22:22"
